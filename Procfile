@@ -1,1 +1,1 @@
-web: ionic serve --port $port --nobrowser --nolivereload --noopen
+web: npm run race
