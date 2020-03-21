@@ -6,12 +6,12 @@
   },
   "author": "Julio Uliandro",
   "scripts": {
-    "ionic": "ionic",
-    "start": "ionic serve",
-    "build": "ionic build",
-    "test": "ionic test",
-    "lint": "ionic lint",
-    "e2e": "ionic e2e"
+    "ionic": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
