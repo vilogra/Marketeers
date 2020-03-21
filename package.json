@@ -12,8 +12,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "race": "ionic serve --port $port --nobrowser --nolivereload --noopen"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

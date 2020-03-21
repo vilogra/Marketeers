@@ -1,1 +1,1 @@
-web: npm run race
+web: npm run start
