@@ -1,5 +1,7 @@
 {
   "name": "Marketeers",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

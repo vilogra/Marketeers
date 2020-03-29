@@ -1,9 +1,63 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
+  <ion-toolbar color="medium">
+    <ion-title>Sign Up</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding="true">
+  <div class="center">
+    <app-logo></app-logo>
+    <h2>Create Marketeers Account</h2>
+  </div>
 
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input
+          autocomplete="off"
+          type="text"
+          placeholder="example@marketeers.com"
+          name="email"
+          [(ngModel)]="postData.email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input
+          autocomplete="off"
+          type="text"
+          name="name"
+          placeholder="name"
+          [(ngModel)]="postData.name"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input
+          autocomplete="off"
+          type="password"
+          name="password"
+          placeholder="password"
+          [(ngModel)]="postData.password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        Already have an account ?<a routerLink="/signin">&nbsp;Sign in</a>
+      </ion-item>
+
+      <ion-button
+        expand="block"
+        shape="round"
+        fill="outline"
+        color="medium"
+        (click)="signUpAction()"
+      >
+        Sign up
+      </ion-button>
+    </ion-list>
+  </form>
 </ion-content>
