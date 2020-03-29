@@ -1,9 +1,85 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>feed</ion-title>
+    <ion-title>Marketeers Feed</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <h4>Welcome to Marketeers, {{ authUser?.name }}</h4>
+  </ion-item>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/images/hmShoes.jpg" alt="Shoes" />
+        <ion-card-header>
+          <ion-card-title>HM Trainers Shoes</ion-card-title>
+          <ion-card-subtitle>Category: Men, Shoes</ion-card-subtitle>
+        </ion-card-header>
 
+        <ion-card-content
+          >Straight-cut top in airy jersey crêpe with a boat neck and short
+          sleeves with pleated trims.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/images/hoodieBrown.jpg" alt="Hoodie" />
+        <ion-card-header>
+          <ion-card-title>Hoodie Brown</ion-card-title>
+          <ion-card-subtitle>Category: Men, Hoodie</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content
+          >Long-sleeved in soft sweatshirt fabric with a lined drawstring hood,
+          kangaroo pocket and ribbing at the cuffs and hem.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/images/jerseyWhite.jpg" alt="Jersey" />
+        <ion-card-header>
+          <ion-card-title>Jersey White</ion-card-title>
+          <ion-card-subtitle>Category: Women, Tops</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content
+          >Trainers in imitation leather with lacing at the front, mesh linings
+          and insoles and rubber soles.
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-card class="object--fit">
+    <img src="../../../assets/images/blackShirts.webp" alt="T-Shirts" />
+    <ion-card-header>
+      <ion-card-title>Basic short sleeve premium T-shirt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      RELAXED FIT. Basic premium quality T-shirt with short sleeves and a round
+      neckline. Made of 100% cotton.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="object--fit">
+    <img src="../../../assets/images/blackShirts.webp" alt="T-Shirts" />
+    <ion-card-header>
+      <ion-card-title>Basic short sleeve premium T-shirt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      RELAXED FIT. Basic premium quality T-shirt with short sleeves and a round
+      neckline. Made of 100% cotton.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="object--fit">
+    <img src="../../../assets/images/blackShirts.webp" alt="T-Shirts" />
+    <ion-card-header>
+      <ion-card-title>Basic short sleeve premium T-shirt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      RELAXED FIT. Basic premium quality T-shirt with short sleeves and a round
+      neckline. Made of 100% cotton.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
