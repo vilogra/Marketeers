@@ -1,0 +1,27 @@
+Kelompok "GaKerjain"
+
+Anggota : 
+- Julio Uliandro (4311811039) :  Membuat client dan server  ( Melakukan deployment )
+- Ilham Hidayat (4311811047) : Mencari referensi dan membantu membuat client
+- Cristin Yohana S (4311811049) : Membuat Laporan serta PPT dan membantu pembuatan video
+- Feggie Violency (4311811054): Membuat Poster dan membantu dalam pembuatan PPT
+- Rahayu Sagita ( 4311811059): Membantu pembuatan poster dan server
+
+Link Video (Youtube):
+https://youtu.be/4Xe5P7IG7zo
+
+Link Github:
+https://github.com/vilogra/Marketeers
+https://github.com/vilogra/backendMarketeers
+
+Link API:
+https://gomarketeers.herokuapp.com/api/products/ => method Get (All Product)
+https://gomarketeers.herokuapp.com/api/products/:id => method Get (Product By Id)
+https://gomarketeers.herokuapp.com/api/products/ => method Post (Product)
+https://gomarketeers.herokuapp.com/api/products/:id => method Delete (Product By Id)
+
+https://gomarketeers.herokuapp.com/api/users/signin => method Post (Login)
+https://gomarketeers.herokuapp.com/api/users/signup => method Post (Register)
+
+Semua file pendukung untuk kebutuhan UAS ditaruh pada github repo
+https://github.com/vilogra/Marketeers pada Folder laporan

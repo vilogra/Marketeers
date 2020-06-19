@@ -8,12 +8,12 @@ import { ToastService } from "./../../services/toast.service";
 @Component({
   selector: "app-signin",
   templateUrl: "./signin.page.html",
-  styleUrls: ["./signin.page.scss"]
+  styleUrls: ["./signin.page.scss"],
 })
 export class SigninPage implements OnInit {
   postData = {
     email: "",
-    password: ""
+    password: "",
   };
 
   constructor(
@@ -40,8 +40,8 @@ export class SigninPage implements OnInit {
     if (this.validateInputs()) {
       this.authService.login(this.postData).subscribe(
         (res: any) => {
-          if (res.data) {
-            this.storageService.store(AuthConstants.AUTH, res).then(res => {
+          if (res) {
+            this.storageService.store(AuthConstants.AUTH, res).then((res) => {
               this.router.navigate(["home/feed"]);
             });
           } else {

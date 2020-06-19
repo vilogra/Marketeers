@@ -6,7 +6,7 @@ import { StorageService } from "./storage.service";
 import { AuthConstants } from "src/config/auth-constants";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class AuthService {
   userData$ = new BehaviorSubject<any>([]);
@@ -18,21 +18,21 @@ export class AuthService {
   ) {}
 
   getUserData() {
-    this.storageService.get(AuthConstants.AUTH).then(res => {
+    this.storageService.get(AuthConstants.AUTH).then((res) => {
       this.userData$.next(res);
     });
   }
 
   login(postData: any): Observable<any> {
-    return this.httpService.post("users/login", postData);
+    return this.httpService.post("users/signin", postData);
   }
 
   register(postData: any): Observable<any> {
-    return this.httpService.post("users/", postData);
+    return this.httpService.post("users/signup", postData);
   }
 
   logout() {
-    this.storageService.removeStorageItem(AuthConstants.AUTH).then(res => {
+    this.storageService.removeStorageItem(AuthConstants.AUTH).then((res) => {
       this.router.navigate(["/signin"]);
     });
   }

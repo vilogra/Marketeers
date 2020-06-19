@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://glints-redu.herokuapp.com/api/'
+  apiUrl: 'https://gomarketeers.herokuapp.com/api/'
 };

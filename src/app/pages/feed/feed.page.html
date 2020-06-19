@@ -52,7 +52,19 @@
       </ion-card>
     </ion-slide>
   </ion-slides>
-  <ion-card class="object--fit">
+  <ion-card class="object--fit" *ngFor="let cloth of listClothes.products">
+    <img
+      src="https://gomarketeers.herokuapp.com/{{cloth.productImage}}"
+      alt="T-Shirts"
+    />
+    <ion-card-header>
+      <ion-card-title>{{cloth.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{cloth.description}}
+    </ion-card-content>
+  </ion-card>
+  <!-- <ion-card class="object--fit">
     <img src="../../../assets/images/blackShirts.webp" alt="T-Shirts" />
     <ion-card-header>
       <ion-card-title>Basic short sleeve premium T-shirt</ion-card-title>
@@ -81,5 +93,5 @@
       RELAXED FIT. Basic premium quality T-shirt with short sleeves and a round
       neckline. Made of 100% cotton.
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 </ion-content>

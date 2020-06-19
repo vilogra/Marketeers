@@ -8,13 +8,13 @@ import { ToastService } from "./../../services/toast.service";
 @Component({
   selector: "app-signup",
   templateUrl: "./signup.page.html",
-  styleUrls: ["./signup.page.scss"]
+  styleUrls: ["./signup.page.scss"],
 })
 export class SignupPage implements OnInit {
   postData = {
     name: "",
     email: "",
-    password: ""
+    password: "",
   };
 
   constructor(
@@ -47,7 +47,7 @@ export class SignupPage implements OnInit {
           if (res.data) {
             this.storageService
               .store(AuthConstants.AUTH, res.data)
-              .then(res => {
+              .then((res) => {
                 this.router.navigate(["home/feed"]);
               });
           } else {
